@@ -3,65 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>您的姓名 - 个人网站</title>
+    <title>李岩 - 个人网站</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>您的姓名</h1>
+            <h1 data-en="Yan Li">李岩</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">关于我</a></li>
-                    <li><a href="#experience">工作经历</a></li>
-                    <li><a href="#publications">学术成果</a></li>
+                    <li><a href="#about" data-en="About Me">关于我</a></li>
+                    <li><a href="#education" data-en="Education">教育背景</a></li>
+                    <li><a href="#experience" data-en="Experience">工作经历</a></li>
+                    <li><a href="#projects" data-en="Projects">研究与工作经验</a></li>
+                    <li><a href="#awards" data-en="Awards">获奖与荣誉</a></li>
+                    <li><a href="#publications" data-en="Publications">成果汇总</a></li>
                 </ul>
             </nav>
+            <button id="langToggle" data-en="中文">English</button>
         </div>
     </header>
 
     <main class="container">
         <section id="about" class="card">
-            <h2>关于我</h2>
-            <p>在这里添加您的个人简介...</p>
+            <h2 data-en="About Me">关于我</h2>
+            <p data-en="Contact: 18702937228 | lifeliyan@outlook.com">联系方式: 18702937228 | lifeliyan@outlook.com</p>
+            <p data-en="Personal Website: gaosiy.github.io">个人网站: gaosiy.github.io</p>
+        </section>
+
+        <section id="education" class="card">
+            <h2 data-en="Education">教育背景</h2>
+            <ul class="timeline">
+                <li>
+                    <h3 data-en="Fudan University">复旦大学</h3>
+                    <p data-en="Ph.D. in Biomedical Engineering (2018-09 to present)">生物医学工程（博士）2018-09 ~ 至今</p>
+                </li>
+                <li>
+                    <h3 data-en="Xidian University">西安电子科技大学</h3>
+                    <p data-en="M.S. in Biomedical Engineering (2014-09 to 2017-07)">生物医学工程（硕士）2014-09 ~ 2017-07</p>
+                </li>
+                <li>
+                    <h3 data-en="Xidian University">西安电子科技大学</h3>
+                    <p data-en="B.S. in Biomedical Engineering (2010-09 to 2014-07)">生物医学工程（本科）2010-09 ~ 2014-07</p>
+                </li>
+            </ul>
         </section>
 
         <section id="experience" class="card">
-            <h2>工作经历</h2>
+            <h2 data-en="Work Experience">工作经历</h2>
             <ul class="timeline">
                 <li>
-                    <h3>职位1</h3>
-                    <p>公司名称 (年份)</p>
-                    <p>简短描述...</p>
+                    <h3 data-en="Huawei Technologies Co., Ltd.">华为技术有限公司</h3>
+                    <p data-en="Software Engineer (2017-09 to 2018-09)">软件工程师 2017-09 ~ 2018-09</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" class="card">
+            <h2 data-en="Research and Work Experience">研究与工作经验</h2>
+            <ul class="timeline">
+                <li>
+                    <h3 data-en="System Research (Ph.D. Phase)">系统研究（博士阶段）</h3>
+                    <p data-en="Project Leader (2019-07 to 2024-07)">项目负责人 2019-07 ~ 2024-07</p>
+                    <p data-en="Project Description: Building an intelligent scientific research platform, promoting the application of AI algorithms in the field of brain-computer interfaces, solving key technical problems such as millisecond-level real-time feedback of the system, and applying AI algorithms to disease monitoring, diagnosis, and treatment.">项目简介：构建智能科研平台，推动AI算法在脑机接口领域的应用，解决系统毫秒级实时反馈等关键技术问题，将AI算法应用于疾病监护、诊断和治疗。</p>
                 </li>
                 <li>
-                    <h3>职位2</h3>
-                    <p>公司名称 (年份)</p>
-                    <p>简短描述...</p>
+                    <h3 data-en="Algorithm Research (Ph.D. Phase)">算法研究（博士阶段）</h3>
+                    <p data-en="Independent Researcher (2021-07 to 2024-07)">独立完成人 2021-07 ~ 2024-07</p>
+                    <p data-en="Project Description: Research on closed-loop neural regulation algorithms for brain-computer interfaces.">项目简介：脑机接口闭环神经调控算法研究。</p>
                 </li>
+                <li>
+                    <h3 data-en="Algorithm Research (Master's Phase)">算法研究（硕士阶段）</h3>
+                    <p data-en="Independent Researcher (2014-09 to 2017-05)">独立完成人 2014-09 ~ 2017-05</p>
+                    <p data-en="Project Objective: Combining fingerprint recognition with encryption technology to ensure secure biometric applications.">项目目标：将指纹识别与加密技术相结合，保障安全的生物特征应用。</p>
+                </li>
+                <li>
+                    <h3 data-en="Software Development (Huawei Phase)">软件研发（华为阶段）</h3>
+                    <p data-en="Engineer (2017-08 to 2018-08)">工程师 2017-08 ~ 2018-08</p>
+                    <p data-en="Embedded Development: Responsible for the development of low-level drivers for camera modules of Hisilicon Kirin platform series smartphones.">嵌入式开发：负责海思麒麟平台系列智能手机摄像头模组的底层驱动的开发，与工厂FAE对接硬件参数并在Linux内核中实现驱动的软件接口。</p>
+                </li>
+                <li>
+                    <h3 data-en="Virtual Reality Innovation and Entrepreneurship Project">虚拟现实创新创业项目</h3>
+                    <p data-en="Technical Leader (2015-10 to 2017-07)">技术负责人 2015-10 ~ 2017-07</p>
+                    <p data-en="Project Description: Responsible for the research and development of multiple projects for virtual reality applications in medical scenarios.">项目简介：面向虚拟现实在医疗中的应用场景，负责多个项目的研发，包括虚拟现实中的3D疾病诊断，虚拟肝癌手术培训，虚拟种植牙手术培训。</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="awards" class="card">
+            <h2 data-en="Awards and Honors">获奖与荣誉</h2>
+            <h3 data-en="International">国际级</h3>
+            <ul>
+                <li data-en="2023 World Artificial Intelligence Conference SAIL TOP30 Team Award (Main Contributor)">2023 世界人工智能大会 SAIL TOP30 团体获奖 主要完成人</li>
+                <li data-en="2022 Geneva International Exhibition of Inventions Silver Award (Second Contributor)">2022 日内瓦国际发明展 银奖 第二完成人</li>
+                <li data-en="2023 25th China Hi-Tech Fair Outstanding Product Award (Team Award, Main Contributor)">2023 第25届中国国际高新技术成果交易会 优秀产品奖 团体获奖 主要完成人</li>
+                <li data-en="2024 16th World Congress of Neuromodulation (Vancouver) Oral Presentation (First Author)">2024 第16届世界神经调控大会（温哥华）口头报告 第一完成人</li>
+            </ul>
+            <h3 data-en="National">国家级</h3>
+            <ul>
+                <li data-en="2024 ASUS IoT Edge AI Computing Solution Creative Competition First Prize (1 winner, Third Contributor)">2024 华硕IoT边缘AI计算机解决方案创意赛 一等奖（1名） 第三完成人</li>
+                <li data-en="2023 NVIDIA Edge AI Developer Competition First Prize (2 winners, First Contributor)">2023 NVIDIA Edge AI开发者大赛 一等奖（2名） 第一完成人</li>
+                <li data-en="2022 First Reinforcement Learning Innovation and Creativity Competition Best Creative Award (1 winner, First Contributor)">2022 首届强化学习创新创意大赛 最佳创意奖（1名） 第一完成人</li>
+                <li data-en="2016 National Graduate 'Smart City' Innovation and Creativity Competition Third Prize (60 out of 1700, First Contributor)">2016 全国研究生"智慧城市"创新创意大赛 三等奖（1700进60）第一完成人</li>
+                <li data-en="2013 National College Student Innovation Experimental Plan Second Place (Recommended for Postgraduate Studies, First Contributor)">2013 国家级大学生创新实验计划 第2名（保研）第一完成人</li>
+            </ul>
+            <h3 data-en="Regional and University Level">地区与校级</h3>
+            <ul>
+                <li data-en="2016 Beijing High-Tech University Alliance 'Internet+' Medical Competition Best Creative Award (1 out of 200, First Contributor)">2016 北京高科大学联盟"互联网+"医疗大赛 最佳创意奖（200进1）第一完成人</li>
+                <li data-en="2023 Fudan University Brain-like Intelligence and Application Doctoral Forum First Prize (1 winner, First Contributor)">2023 复旦大学类脑智能与应用博士生论坛 一等奖（1名）第一完成人</li>
+                <li data-en="2017 China Aerospace Science and Technology Corporation CASC Scholarship (12 in the whole school, First Contributor)">2017 中国航天科技集团 CASC奖学金（全校12人）第一完成人</li>
+                <li data-en="2018 Guanghua Education Foundation Guanghua Scholarship (125 in the whole school, First Contributor)">2018 光华教育基金会 光华奖学金（全校125人） 第一完成人</li>
+                <li data-en="2012 Xidian University Undergraduate Research Training Program First Place (Second Contributor)">2012 西安电子科技大学本科生科研训练计划 第一名 第二完成人</li>
             </ul>
         </section>
 
         <section id="publications" class="card">
-            <h2>学术成果</h2>
-            <ul class="publication-list">
-                <li>
-                    <h3>论文1标题</h3>
-                    <p>期刊名称 (年份)</p>
-                </li>
-                <li>
-                    <h3>论文2标题</h3>
-                    <p>期刊名称 (年份)</p>
-                </li>
-            </ul>
+            <h2 data-en="Publications and Patents">成果汇总</h2>
+            <h3 data-en="Academic Papers">学术论文</h3>
+            <ol>
+                <li data-en="Brain-Machine Interactive Neuromodulation Research Tool with Edge AI Computing, Heliyon, 2024 (First Author, SCI indexed, JCR Q3, IF=3.9)">Brain-Machine Interactive Neuromodulation Research Tool with Edge AI Computing, Heliyon, 2024 (一作， SCI检索，中科院三区， IF=3.9)</li>
+                <li data-en="Closed-loop deep brain stimulation platform for translational research, Neuromodulation, 2024 (First Author, SCI indexed, JCR Q3, IF=3.2)">Closed-loop deep brain stimulation platform for translational research, Neuromodulation, 2024 (一作， SCI检索，中科院三区， IF=3.2)</li>
+                <li data-en="Multiple time-scale neuromodulation strategy for Closed-loop Deep Brain Stimulation Parkinson's disease, Journal of Neural Engineering, 2024 (Second Author, SCI indexed, JCR Q3, IF=4)">Multiple time-scale neuromodulation strategy for Closed-loop Deep Brain Stimulation Parkinson's disease, Journal of Neural Engineering, 2024(二作， SCI检索，中科院三区， IF=4)</li>
+                <li data-en="Amplitude Adaptive Modulation of Neural Oscillations Over Long-Term Dynamic Conditions: A Computational Study, IEEE Transactions on Neural Systems & Rehabilitation Engineering, 2024 (Second Author, SCI indexed, JCR Q2, IF=4.9)">Amplitude Adaptive Modulation of Neural Oscillations Over Long-Term Dynamic Conditions: A Computational Study, IEEE Transactions on Neural Systems &Rehabilitation Engineering, 2024 (二作， SCI检索，中科院二区， IF=4.9)</li>
+                <li data-en="Real-time removal of stimulation artifacts in closed-loop deep brain stimulation, Journal of Neural Engineering, 2021 (Fifth Author, SCI indexed, JCR Q3, IF=4)">Real-time removal of stimulation artifacts in closed-loop deep brain stimulation, Journal of Neural Engineering, 2021(五作， SCI检索，中科院三区， IF=4)</li>
+            </ol>
+            <h3 data-en="Authorized Invention Patents">授权发明专利</h3>
+            <ol>
+                <li data-en="Intelligent wheelchair system based on SSVEP steady-state visual evoked potential CN201310163499.3[P]. Liu Peng, Li Yan, et al.">基于SSVEP稳态视觉诱发电位的智能轮椅系统 CN201310163499.3[P]. 刘鹏，李岩等</li>
+                <li data-en="Credibility detection method based on password hash and biometric recognition CN201510144691.7[P]. Pang Liaojun, Li Yan, et al.">基于密码哈希与生物特征识别的可信性检测方法CN201510144691.7[P]. 庞辽军，李岩等</li>
+                <li data-en="Key binding method with adaptive fingerprint minutiae quantity CN201710332224.6[P]. Pang Liaojun, Li Yan, et al.">自适应指纹细节点数量的密钥绑定方法CN201710332224.6[P]. 庞辽军，李岩等</li>
+                <li data-en="A humanoid robot head orientation method based on audio-visual synergy CN202010993992.8[P]. Wang Shouyan, Li Yan">一种听视觉协同的人形机器人头部定向方法CN202010993992.8[P]. 王守岩 李岩</li>
+                <li data-en="A communication system based on steady-state visual evoked potential CN202110825498.5[P]. Li Yan, et al.">一种基于稳态视觉诱发电位的沟通系统CN202110825498.5[P]. 李岩等</li>
+            </ol>
+            <h3 data-en="Books">著作</h3>
+            <p data-en="'Fundamentals of Biometric Encryption' Pang Liaojun, Zhao Weiqiang, Li Yan. Electronic Industry Press, 2016.">《生物特征加密基础》庞辽军, 赵伟强, 李岩.电子工业出版社,2016.</p>
+            <p data-en="CSDN blogger in China's professional IT community, with over 7,000 followers and 400,000+ visits">中国专业IT社区CSDN博主，粉丝7000+，访问40W+</p>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 您的姓名. 保留所有权利。</p>
+            <p data-en="&copy; 2024 Yan Li. All rights reserved.">&copy; 2024 李岩. 保留所有权利。</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
